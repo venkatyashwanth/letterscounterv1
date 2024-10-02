@@ -1,10 +1,10 @@
-import Cashwithdrawal from "./components/Cashwithdrawal";
+import LetterCounter from "./components/LettersCounter";
 
 function App() {
   return (
-    <div>
-      <Cashwithdrawal/>
-    </div>
+    <>
+      <LetterCounter />
+    </>
   );
 }
 

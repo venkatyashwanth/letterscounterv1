@@ -1,18 +1,16 @@
 :root {
     --fontvar1: "Roboto", system-ui;
-    --clr1: #150b3e;
-    --clr2: #c7d2fe;
-    --clr3: #7c3aed;
-    --clr4: #d4d2db;
-    --clr5: #585076;
-    --clr6: #382f5a;
-    --clr7: #c4c4c4;
+    
+    --clrgrd: linear-gradient(to right, #1d976c, #93f9b9);
+    --clr1: #ffffff;
+    --clr2: #e4e7eb;
+    --clr3: #219a6f;
 }
 
 * {
     padding: 0;
     margin: 0;
-    box-sizing: inherit
+    box-sizing: inherit;
 }
 
 ;

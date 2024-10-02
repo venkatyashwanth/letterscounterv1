@@ -1,0 +1,77 @@
+@import "../../scss/base";
+
+.appContainer{
+    background: var(--clrgrd);
+    min-height: 100vh;
+    padding: 0 2rem;
+    @include y_justifycenter;
+    align-items: center;
+    .appContent{
+        display: flex;
+        align-items: center;
+        @media all and (max-width: 767px){
+            flex-direction: column-reverse;
+            & > div:first-child{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h2{
+                    text-align: center;
+                }
+                .inputContainer{
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }        
+    }
+    .heading{
+        @extend %textVar1;
+        color: var(--clr1);
+        max-width: 24rem;
+    }
+    .inputContainer{
+        @include y_alignStart;
+        width: 32rem;
+        margin-top: 2rem;
+        label{
+            @extend %placholderText;
+            color: var(--clr1);
+            margin-bottom: .4rem;
+        }
+        input[type='text']{
+            background-color: transparent;
+            border: 1px solid var(--clr1);
+            padding: .4rem 1rem;
+            width: 100%;
+            color: var(--clr1);
+            border-radius: .4rem;
+            &:focus{
+                outline: none;
+            }
+            &::placeholder{
+                @extend %placholderText;
+            }
+        }
+    }
+    .inputResult{
+        margin-top: 2rem;
+        width: 16rem;
+        display: flex;
+        justify-content: center;
+        background-color: var(--clr1);
+        padding: 1.6rem;
+        border-radius: .6rem;
+        p{
+            color: var(--clr3);
+            white-space: nowrap;
+            @extend %textVar2;
+        }
+    }
+    .imageWrapper{
+        max-width: 60rem;
+        img{
+            width: 100%;
+        }
+    }
+}
